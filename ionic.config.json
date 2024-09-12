@@ -1,0 +1,7 @@
+{
+  "name": "appVenta",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

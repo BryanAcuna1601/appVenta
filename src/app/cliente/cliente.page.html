@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+    <ion-title>Ticketazo!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Registro de Cliente</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-input [(ngModel)]="nombre" label="Nombre" labelPlacement="floating" placeholder="Nombre"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="apellido" label="Apellido" labelPlacement="floating" placeholder="Apellido"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="edad" type="number" label="Edad" labelPlacement="floating" placeholder="Edad"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-select [(ngModel)]="tipoEntrada" label="Tipo de entrada" placeholder="selección">
+          <ion-select-option value="cine">Cine</ion-select-option>
+          <ion-select-option value="eventos">Eventos</ion-select-option>
+          <ion-select-option value="deportes">Deportes</ion-select-option>
+          <ion-select-option value="conciertos">Conciertos</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="cantidadEntradas" type="number" label="Cantidad" labelPlacement="floating" placeholder="Cantidad"></ion-input>
+      </ion-item>
+    </ion-card-content>
+
+    <ion-button (click)="goToComprar()" expand="block">
+      <ion-icon slot="start" name="person"></ion-icon>Comprar
+    </ion-button>
+  </ion-card>
+</ion-content>
+
+<ion-footer collapse="fade">
+  <ion-toolbar>
+    <ion-title class="foot">Comprar entrada</ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+    <ion-title class="titulo">Ticketazo!</ion-title>
+  </ion-toolbar>
+  <ion-searchbar animated="true" placeholder="Buscar"></ion-searchbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img alt="Silhouette of mountains" src="../../assets/cine-img/beetlejuice2.jpeg" />
+    <ion-card-header>
+      <ion-card-title>Beetlejuice, Beetlejuice</ion-card-title>
+      <ion-card-subtitle>+14 Restricción</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-button (click)="goToCliente()" expand="block" ><ion-icon slot="start" name="cart"></ion-icon>Comprar</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img alt="Silhouette of mountains" src="../../assets/cine-img/alienromulus.jpeg" />
+    <ion-card-header>
+      <ion-card-title>Alien Romulus</ion-card-title>
+      <ion-card-subtitle>+14</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-button (click)="goToCliente()" expand="block"><ion-icon slot="start" name="cart"></ion-icon>Comprar</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img alt="Silhouette of mountains" src="../../assets/cine-img/transformersuno.jpg" />
+    <ion-card-header>
+      <ion-card-title>Transformers Uno</ion-card-title>
+      <ion-card-subtitle>TE+7</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-button (click)="goToCliente()" expand="block"><ion-icon slot="start" name="cart"></ion-icon>Comprar</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img alt="Silhouette of mountains" src="../../assets/cine-img/deadpool3.jpg" />
+    <ion-card-header>
+      <ion-card-title>Deadpool y Wolverine</ion-card-title>
+      <ion-card-subtitle>+14</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-button (click)="goToCliente()" expand="block"><ion-icon slot="start" name="cart"></ion-icon>Comprar</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer collapse="fade">
+  <ion-toolbar>
+    <ion-title class="foot">Cine</ion-title>
+  </ion-toolbar>
+</ion-footer>

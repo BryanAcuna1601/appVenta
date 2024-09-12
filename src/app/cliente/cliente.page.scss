@@ -1,0 +1,11 @@
+ion-toolbar{
+    background-color: var(--ion-color-mycolor);
+}
+
+.titulo, .foot{
+    text-align: center;
+}
+
+ion-item {
+    --padding-start: 0;
+}
